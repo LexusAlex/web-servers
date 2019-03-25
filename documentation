@@ -1,0 +1,35 @@
+docker pull ubuntu:19.04
+docker pull debian:9
+docker pull centos:7
+docker pull fedora:29
+docker pull alpine:3.9
+
+
+
+
+cat /etc/*-release
+
+веб сервера
+apache2
+nginx
+
+docker build --tag lexusalex/ubuntu .
+docker exec -it ubuntu-test /bin/bash
+docker run --name ubuntu-test -it -p 80:80 -d lexusalex/ubuntu
+
+
+ubuntu /var/www/html/
+debian /var/www/html/
+centos /var/www/html/
+fedora /var/www/html/
+alpine /var/www/localhost/htdocs
+
+
+Список файлов для пакета
+dpkg -L apache2
+rpm -ql httpd
+
+
+https://www.f-notes.info/linux
+
+режимы работы apache https://rtfm.co.ua/apache-mpm-worker-prefork-ili-event/
