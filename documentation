@@ -4,9 +4,6 @@ docker pull centos:7
 docker pull fedora:29
 docker pull alpine:3.9
 
-
-
-
 cat /etc/*-release
 
 веб сервера
@@ -38,3 +35,4 @@ https://dlx3.ru/post/nastrojka-apache/
 https://shurshun.ru/apache-prefork-mpm-worker/
 http://linux-in.com/module-mpm-in-web-server-apache-worker-prefork-event/
 https://ruhighload.com/%d0%a2%d1%8e%d0%bd%d0%b8%d0%bd%d0%b3+%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80%d0%b0+apache
+

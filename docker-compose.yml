@@ -1,11 +1,10 @@
-version: '3.7'
-
+version: "3.9"
 services:
-  ubuntu-apache:
-    container_name: ubuntu-apache
-    build: ./services/ubuntu-apache
-    volumes:
-    - $PWD/services/ubuntu-apache/public:/var/www/html
-    - $PWD/services/ubuntu-apache/etc/apache2/apache2.conf:/etc/apache2/apache2.conf
+  nginx:
+    build:
+      context: docker
+      dockerfile: nginx/Dockerfile
     ports:
-    - "127.0.0.1:80:80"
+      - "80:80"
+    volumes:
+      - ./:/web

@@ -1,0 +1,52 @@
+###
+GET /cicd.png HTTP/1.1
+Host: 127.0.0.1
+###
+
+GET /unix-bach.pdf HTTP/1.1
+Host: 127.0.0.1
+###
+
+GET / HTTP/1.1
+Host: 127.0.0.1
+Cookie: name2=dfshsfhsfhsfghfsghfgsh;
+###
+
+###
+POST / HTTP/1.1
+Host: 127.0.0.1
+Content-Type: multipart/form-data; boundary="sd"
+
+--sd
+Content-Disposition: form-data; name="name"
+
+
+###
+
+POST / HTTP/1.1
+Host: 127.0.0.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 13
+
+test=123&test2=234
+
+###
+
+PATCH /text.txt HTTP/1.1
+Host: 127.0.0.1
+Content-Type: application/example
+If-Match: "e0023aa4e"
+Content-Length: 100
+
+[описание изменений]
+###
+
+CONNECT /text.txt HTTP/1.1
+Host: 127.0.0.1
+
+###
+CONNECT / HTTP/1.1
+Host: 127.0.0.1
+
+###
+GET /kl;l;
