@@ -7,9 +7,8 @@ GET /unix-bach.pdf HTTP/1.1
 Host: 127.0.0.1
 ###
 
-GET / HTTP/1.1
-Host: 127.0.0.1
-Cookie: name2=dfshsfhsfhsfghfsghfgsh;
+GET /index.php HTTP/1.1
+Host: 127.0.0.1:8080
 ###
 
 ###
